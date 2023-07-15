@@ -1,0 +1,9 @@
+button {
+    position: relative;
+    animation: run 5s infinite;
+}
+
+@keyframes run {
+    from {left: 0;}
+    to {left: 100%;}
+}

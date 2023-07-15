@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./test.js"></script>
+    <script src="./function ola() {.js"></script>
+
+    <style>
+        body{
+            background-color: grey;
+        }
+    </style>
+    
+</head>
+<body>
+    <title>Olá, mundo!</title>
+
+    <button id="runaway-btn"><a 
+        href="https://www.youtube.com/watch?v=sIctjwmXnJM">Num quero</a></button>
+
+    <h1>VAMO??</h1>
+
+    <p id="escolha1">
+        Faça sua escolha
+    </p>
+
+    <Button id="runaway"><a
+        href="https://www.youtube.com/watch?v=izGwDsrQ1eQ">óbvio que sim</a></Button>
+  
+        <style>
+            #runaway {
+                position: absolute;
+                top: 50%;
+                left: 30%;
+                transform: translate(-50%, -50%);
+            }
+
+            h1 {
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+
+                color: black;
+                font-size: 60px;
+            }
+
+            #escolha1 {
+                position: absolute;
+                top: 25%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                color: black;
+                font-size: 30px;
+            }
+
+        </style>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Random Button Position</title>
+       <style>
+        #runaway-btn {
+            position: absolute;
+            top: 50%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+        }
+       </style>
+    </head>
+    <body>
+            <script>
+                const btn = document.getElementById('runaway-btn');
+
+                function moveBtn() {
+                  const x = Math.floor(Math.random() * window.innerWidth);
+                  const y = Math.floor(Math.random() * window.innerHeight);
+                  
+                  btn.style.top = `${y}px`;
+                  btn.style.left = `${x}px`;
+                }
+                
+                btn.addEventListener('mouseover', moveBtn);
+                
+            </script>
+    </body>
+</html>

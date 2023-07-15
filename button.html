@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <h1>Botão fujão</h1>
+
+        <button id="runaway-btn">aqui!</button>
+
+        <style>
+            #runaway-btn {
+                position: absolute;
+                top: 45%;
+                left: 60%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+        
+
+        <script>
+            const btn = document.getElementById('runaway-btn');
+
+            function moveBtn() {
+              const x = Math.floor(Math.random() * window.innerWidth);
+              const y = Math.floor(Math.random() * window.innerHeight);
+              
+              btn.style.top = `${y}px`;
+              btn.style.left = `${x}px`;
+            }
+            
+            btn.addEventListener('mouseover', moveBtn);
+        </script>
+        <script>
+            window.alert("deu errado dnv...");
+        </script>
+    </head>
+    <body>
+       <p>E ai, rola ou não rola??</p>
+    </body>
+</html>
